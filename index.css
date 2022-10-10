@@ -23,6 +23,67 @@ h3 {
   padding-right: 30px;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+}
+
+header .header-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  background: #1d6a3f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer img {
+  width: 150px;
+}
+
 .button {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -49,6 +110,7 @@ nav a {
 
 .billboard {
   height: 550px;
+  text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #1d6a3f), to(rgba(255, 255, 255, 0.3506))), url(./images/house.jpg);
   background: linear-gradient(180deg, #1d6a3f 20%, rgba(255, 255, 255, 0.3506) 100%), url(./images/house.jpg);
   background-position: center;
@@ -75,25 +137,7 @@ nav a {
 .billboard h1 {
   color: white;
   font-size: 2em;
-}
-
-header {
-  width: 100%;
-  position: fixed;
-  padding-top: 20px;
-}
-
-header .header-wrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 30px;
 }
 
 .benefits {
@@ -173,10 +217,11 @@ header .header-wrap {
           align-items: center;
 }
 
-.plans .plan-chooser {
+.plans .plan-chooser-2 {
   height: 50px;
-  max-width: 300px;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,11 +232,13 @@ header .header-wrap {
   position: relative;
   border: solid 1px grey;
   cursor: pointer;
+  display: flex;
+  width: 100%;
+  max-width: 500px;
 }
 
-.plans .plan-chooser span {
+.plans .plan-chooser-2 span {
   height: 100%;
-  width: 50%;
   text-align: center;
   position: relative;
   display: -webkit-box;
@@ -204,21 +251,22 @@ header .header-wrap {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
+  width: 50%;
 }
 
-.plans .plan-chooser span.active {
+.plans .plan-chooser-2 span.active {
   color: white;
 }
 
-.plans .slider {
+.plans .plan-chooser-2 .slider {
   height: 100%;
   background: #1d6a3f;
   position: absolute;
-  width: 50%;
   border-radius: 50px;
   z-index: 1;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  width: 50%;
 }
 
 .carousel-container {
@@ -272,10 +320,7 @@ header .header-wrap {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 5%;
 }
 
 .carousel-container .plan-box .speed-info-container {
@@ -302,6 +347,7 @@ header .header-wrap {
 }
 
 .carousel-container .semi-circle {
+  width: 100%;
   width: 200px;
   height: 100px;
   border-top-left-radius: 100px;
@@ -320,5 +366,36 @@ header .header-wrap {
       -ms-flex-align: end;
           align-items: end;
   margin-bottom: 30px;
+}
+
+.service-help {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-help .service-help-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-help .service-help-content:nth-child(2) {
+  margin-top: 100px;
+}
+
+.service-help p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
