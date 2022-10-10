@@ -171,6 +171,15 @@ nav a {
   gap: 10%;
 }
 
+@media only screen and (max-width: 1007px) {
+  .benefits .benefits-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .benefits h1 {
   margin-bottom: 50px;
 }
