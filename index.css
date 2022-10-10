@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.page-width {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 500px;
+  font-size: 20px;
+  color: white;
+}
+
+.button.button-light-green {
+  background: #2fac66;
+}
+
+.button.button-dark-green {
+  background: #1d6a3f;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.billboard {
+  height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #1d6a3f), to(rgba(255, 255, 255, 0.3506))), url(./images/house.jpg);
+  background: linear-gradient(180deg, #1d6a3f 20%, rgba(255, 255, 255, 0.3506) 100%), url(./images/house.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.billboard .billboard-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.billboard h1 {
+  color: white;
+  font-size: 2em;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+}
+
+header .header-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits .benefits-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+}
+
+.benefits h1 {
+  margin-bottom: 50px;
+}
+
+.benefits .image-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.benefits p {
+  text-align: center;
+}
+
+.plans {
+  padding-top: 50px;
+}
+
+.plans .plans-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans .plan-chooser {
+  height: 50px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: solid 1px grey;
+  cursor: pointer;
+}
+
+.plans .plan-chooser span {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.plans .plan-chooser span.active {
+  color: white;
+}
+
+.plans .slider {
+  height: 100%;
+  background: #1d6a3f;
+  position: absolute;
+  width: 50%;
+  border-radius: 50px;
+  z-index: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.carousel-container {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.carousel-container .carousel-container-wrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-container .view-1 {
+  height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.carousel-container .view-2 {
+  height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.carousel-container .plan-box {
+  background: #1d6a3f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.carousel-container .plan-box .speed-info-container {
+  margin-bottom: 30px;
+}
+
+.carousel-container .plan-box .speed-info-container span {
+  display: inline;
+  font-size: 12px;
+}
+
+.carousel-container .plan-box .price {
+  margin-bottom: 30px;
+}
+
+.carousel-container .plan-box p {
+  text-align: center;
+}
+
+.carousel-container .plan-box .button {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carousel-container .semi-circle {
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 10px solid yellow;
+  border-bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=index.css.map */
