@@ -11,8 +11,32 @@ body {
   height: 100%;
 }
 
-h3 {
-  font-size: 40px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Europa;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a {
+  font-family: 'Europa';
+}
+
+p {
+  font-family: 'Europa';
+}
+
+span {
+  font-family: 'Europa';
+}
+
+.light {
+  font-weight: lighter;
 }
 
 .page-width {

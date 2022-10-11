@@ -11,8 +11,28 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Europa;
+}
+
+h1 {
+  font: size 40px;
+}
+
 h3 {
   font-size: 40px;
+}
+
+p {
+  font-family: 'Europa';
+}
+
+span {
+  font-family: 'Europa';
+}
+
+.light {
+  font-weight: lighter;
 }
 
 .page-width {
@@ -156,9 +176,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plans .plan-chooser-3 {
@@ -211,5 +235,106 @@ header {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   width: 33.3333333333%;
+}
+
+.carousel-container {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.carousel-container .carousel-container-wrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-container .view {
+  height: 100%;
+  min-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1007px) {
+  .carousel-container .view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.carousel-container .plan-box {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d6a3e), to(#0f3620));
+  background: linear-gradient(180deg, #1d6a3e 0%, #0f3620 100%);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 5%;
+}
+
+.carousel-container .plan-box .speed-info-container {
+  margin-bottom: 30px;
+}
+
+.carousel-container .plan-box .speed-info-container span {
+  display: inline;
+  font-size: 12px;
+}
+
+.carousel-container .plan-box .price {
+  margin-bottom: 30px;
+}
+
+.carousel-container .plan-box p {
+  text-align: center;
+}
+
+.carousel-container .plan-box .button {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carousel-container .semi-circle {
+  width: 100%;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 10px solid yellow;
+  border-bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=plans.css.map */

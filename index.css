@@ -11,8 +11,28 @@ body {
   height: 100%;
 }
 
-h3 {
-  font-size: 40px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Europa;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Europa';
+}
+
+span {
+  font-family: 'Europa';
+}
+
+.light {
+  font-weight: lighter;
 }
 
 .page-width {
@@ -136,7 +156,6 @@ nav a {
 
 .billboard h1 {
   color: white;
-  font-size: 2em;
   margin-bottom: 30px;
 }
 
@@ -156,32 +175,40 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .benefits .benefits-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits h2 {
+  margin-bottom: 50px;
+}
+
+.benefits .image-text-wrap-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 @media only screen and (max-width: 1007px) {
-  .benefits .benefits-wrap {
+  .benefits .image-text-wrap-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.benefits h1 {
-  margin-bottom: 50px;
 }
 
 .benefits .image-text-wrap {
@@ -208,6 +235,7 @@ nav a {
 
 .plans {
   padding-top: 50px;
+  text-align: center;
 }
 
 .plans .plans-wrap {
@@ -226,8 +254,13 @@ nav a {
           align-items: center;
 }
 
+.plans h2 {
+  margin-bottom: 50px;
+}
+
 .plans .plan-chooser-2 {
   height: 50px;
+  margin-bottom: 100px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -280,7 +313,6 @@ nav a {
 
 .carousel-container {
   width: 100%;
-  margin-top: 50px;
   overflow: hidden;
   margin-bottom: 50px;
 }
@@ -293,6 +325,123 @@ nav a {
   display: flex;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.carousel-container .carousel-container {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.carousel-container .carousel-container .carousel-container-wrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-container .carousel-container .view-1 {
+  height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1007px) {
+  .carousel-container .carousel-container .view-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.carousel-container .carousel-container .view-2 {
+  height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1007px) {
+  .carousel-container .carousel-container .view-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.carousel-container .carousel-container .plan-box {
+  background: #1d6a3f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 5%;
+}
+
+.carousel-container .carousel-container .plan-box .speed-info-container {
+  margin-bottom: 30px;
+}
+
+.carousel-container .carousel-container .plan-box .speed-info-container span {
+  display: inline;
+  font-size: 12px;
+}
+
+.carousel-container .carousel-container .plan-box .price {
+  margin-bottom: 30px;
+}
+
+.carousel-container .carousel-container .plan-box p {
+  text-align: center;
+}
+
+.carousel-container .carousel-container .plan-box .button {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carousel-container .carousel-container .semi-circle {
+  width: 100%;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 10px solid yellow;
+  border-bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 30px;
 }
 
 .carousel-container .view-1 {
@@ -332,7 +481,8 @@ nav a {
 }
 
 .carousel-container .plan-box {
-  background: #1d6a3f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d6a3e), to(#0f3620));
+  background: linear-gradient(180deg, #1d6a3e 0%, #0f3620 100%);
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
