@@ -23,6 +23,10 @@ h2 {
   font-size: 30px;
 }
 
+a {
+  font-family: 'Europa';
+}
+
 p {
   font-family: 'Europa';
 }
@@ -252,10 +256,6 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.plans h2 {
-  margin-bottom: 50px;
 }
 
 .plans .plan-chooser-2 {

@@ -131,4 +131,22 @@ nav a {
   font-size: 20px;
   margin: 20px;
 }
+
+@media only screen and (max-width: 700px) {
+  nav a {
+    display: none;
+  }
+}
+
+nav i {
+  font-size: 30px;
+  color: white;
+  display: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+  nav i {
+    display: block !important;
+  }
+}
 /*# sourceMappingURL=global.css.map */
