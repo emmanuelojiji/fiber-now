@@ -51,6 +51,9 @@ header {
   width: 100%;
   position: fixed;
   padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 header .header-wrap {
@@ -130,6 +133,24 @@ nav a {
   color: white;
   font-size: 20px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav a {
+    display: none;
+  }
+}
+
+nav i {
+  font-size: 30px;
+  color: white;
+  display: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+  nav i {
+    display: block !important;
+  }
 }
 
 .billboard {
@@ -256,6 +277,10 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.plans .heading {
+  margin-bottom: 50px;
 }
 
 .plans .plan-chooser-2 {
