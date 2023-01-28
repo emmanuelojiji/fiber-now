@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html,
@@ -11,7 +11,12 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Europa;
 }
 
@@ -24,15 +29,15 @@ h2 {
 }
 
 a {
-  font-family: 'Europa';
+  font-family: "Europa";
 }
 
 p {
-  font-family: 'Europa';
+  font-family: "Europa";
 }
 
 span {
-  font-family: 'Europa';
+  font-family: "Europa";
 }
 
 .light {
@@ -52,21 +57,15 @@ header {
   position: fixed;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
+  z-index: 2;
+  transition: 0.2s ease-in-out;
 }
-
 header .header-wrap {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -74,39 +73,19 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 footer .footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 footer .footer-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 footer .footer-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
 footer img {
   width: 150px;
 }
@@ -120,13 +99,27 @@ footer img {
   font-size: 20px;
   color: white;
 }
-
 .button.button-light-green {
   background: #2fac66;
 }
-
 .button.button-dark-green {
   background: #1d6a3f;
+}
+
+.mobile-nav {
+  display: none;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background: #1d6a3f;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+
+.close {
+  color: white;
 }
 
 nav a {
@@ -134,19 +127,16 @@ nav a {
   font-size: 20px;
   margin: 20px;
 }
-
 @media only screen and (max-width: 700px) {
   nav a {
     display: none;
   }
 }
-
 nav i {
   font-size: 30px;
   color: white;
   display: none !important;
 }
-
 @media only screen and (max-width: 700px) {
   nav i {
     display: block !important;
@@ -164,29 +154,17 @@ header {
   padding-bottom: 100px;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #1d6a3f), to(rgba(255, 255, 255, 0.3506))), url(./images/house.jpg);
-  background: linear-gradient(180deg, #1d6a3f 20%, rgba(255, 255, 255, 0.3506) 100%), url(./images/house.jpg);
+  background: linear-gradient(180deg, rgb(29, 106, 63) 20%, rgba(255, 255, 255, 0.3505996148) 100%), url(./images/house.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .billboard .billboard-wrap {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .billboard h1 {
   color: white;
   font-size: 2em;
@@ -196,32 +174,19 @@ header {
 .plans {
   padding-top: 50px;
 }
-
 .plans .plans-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .plans .plan-chooser-3 {
   height: 50px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   border: solid 1px grey;
   cursor: pointer;
@@ -229,35 +194,25 @@ header {
   width: 100%;
   max-width: 500px;
 }
-
 .plans .plan-chooser-3 span {
   height: 100%;
   text-align: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
   width: 50%;
 }
-
 .plans .plan-chooser-3 span.active {
   color: white;
 }
-
 .plans .plan-chooser-3 .slider {
   height: 100%;
   background: #1d6a3f;
   position: absolute;
   border-radius: 50px;
   z-index: 1;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   width: 33.3333333333%;
 }
@@ -268,79 +223,51 @@ header {
   overflow: hidden;
   margin-bottom: 50px;
 }
-
 .carousel-container .carousel-container-wrap {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .carousel-container .view {
   height: 100%;
   min-width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[3];
-      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 30px;
 }
-
 @media only screen and (max-width: 1007px) {
   .carousel-container .view {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .carousel-container .plan-box {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d6a3e), to(#0f3620));
-  background: linear-gradient(180deg, #1d6a3e 0%, #0f3620 100%);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: linear-gradient(180deg, rgb(29, 106, 62) 0%, rgb(15, 54, 32) 100%);
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   padding: 5%;
 }
-
 .carousel-container .plan-box .speed-info-container {
   margin-bottom: 30px;
 }
-
 .carousel-container .plan-box .speed-info-container span {
   display: inline;
   font-size: 12px;
 }
-
 .carousel-container .plan-box .price {
   margin-bottom: 30px;
 }
-
 .carousel-container .plan-box p {
   text-align: center;
 }
-
 .carousel-container .plan-box .button {
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
-
 .carousel-container .semi-circle {
   width: 100%;
   width: 200px;
@@ -349,17 +276,9 @@ header {
   border-top-right-radius: 100px;
   border: 10px solid yellow;
   border-bottom: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  justify-content: center;
+  align-items: end;
   margin-bottom: 30px;
-}
-/*# sourceMappingURL=plans.css.map */
+}/*# sourceMappingURL=plans.css.map */

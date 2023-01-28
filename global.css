@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -58,24 +57,15 @@ header {
   position: fixed;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
   z-index: 2;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 header .header-wrap {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -83,39 +73,19 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 footer .footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 footer .footer-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 footer .footer-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
 footer img {
   width: 150px;
 }
@@ -129,11 +99,9 @@ footer img {
   font-size: 20px;
   color: white;
 }
-
 .button.button-light-green {
   background: #2fac66;
 }
-
 .button.button-dark-green {
   background: #1d6a3f;
 }
@@ -147,7 +115,6 @@ footer img {
   left: 0;
   background: #1d6a3f;
   z-index: 3;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -160,22 +127,18 @@ nav a {
   font-size: 20px;
   margin: 20px;
 }
-
 @media only screen and (max-width: 700px) {
   nav a {
     display: none;
   }
 }
-
 nav i {
   font-size: 30px;
   color: white;
   display: none !important;
 }
-
 @media only screen and (max-width: 700px) {
   nav i {
     display: block !important;
   }
-}
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,24 @@
+.table-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid 1px black;
+  display: flex;
+}
+.table-container .column {
+  border-right: solid 1px black;
+}
+.table-container .column:last-child {
+  border-right: 0;
+}
+.table-container .row {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: solid 1px black;
+}
+.table-container .row:last-child {
+  border-bottom: 0;
+}/*# sourceMappingURL=table.css.map */
